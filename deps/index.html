@@ -1,12 +1,19 @@
 <html>
 	<head>
 		<title>PAGE</title>
-	<link rel="stylesheet" type="text/css" href="test.css" />
+	<link rel="stylesheet" type="text/css" href="test.css" />\
+	<script>
+		function fun(){
+			document.getElementById("don").innerHTML="Hello";
+		}
+	</script>
 	</head>
 	<body>
 		<h1>
 			Test Heading
 			<p>Single Text</p>
+			<input type="button" onclick="fun()" value="Clickme"/>
+			<p id="don"></p>
 		</h1>
 	</body>
 </html>
