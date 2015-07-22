@@ -11,3 +11,13 @@ function pre(){
 	//alert(put);
 	//pd.innerHTML=put;
 }
+function sendMail() {
+    var link = "mailto:proffraja@gmail.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + escape("This is my subject")
+             + "&body=" + escape("test mail")
+    ;
+
+    window.location.href = link;
+}
+
