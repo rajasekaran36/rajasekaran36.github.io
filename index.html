@@ -4,10 +4,19 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>New Web Project</title>
+        <!--<link type="text/javascript" href="scripts/myscripts.js"/>-->
+        <script>
+        	function getdata(){
+				var name=document.getElementById("name").value;
+				var rollno=document.getElementById("rolno").value;
+				//document.getElementById("display").innerHTML=name;
+				alert("hello");
+				}
+        </script>
     </head>
     <body>
     	<h1 align="center">
-    		FEED BACKS
+    		FEEDBACK
     	</h1>
     	<table>
     	<tr>
@@ -50,6 +59,15 @@
     		<td><label>TOPIC YOU DON'T UNDERSTAND:</label></td> 
     		<td><textarea id="ut"rows="4" cols="50"></textarea></td>
     	</tr>
+    	<tr>
+    		<td>
+    			<input type="button" onclick="getdata()" value="Send"/>
+    		</td>
+    		<td>
+    			<input type="button" onclick="clean()" value="Clear"/>
+    		</td>
+    	</tr>
     	</table>
+    	<p id="display"></p>
     </body>
 </html>
