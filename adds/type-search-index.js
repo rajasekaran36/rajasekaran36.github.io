@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"arithmatic","l":"Addition"}]
