@@ -130,7 +130,7 @@ p {
 
 header.special {
   text-align: center;
-  margin-bottom: 4rem; }
+  margin-bottom: 1rem; }
   header.special p {
     max-width: 75%;
     margin-left: auto;
@@ -1035,7 +1035,8 @@ ul.actions {
 .row {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box; }
+  box-sizing: border-box;  
+}
   .row > * {
     box-sizing: border-box; }
   .row.gtr-uniform > * > :last-child {
@@ -1150,7 +1151,8 @@ ul.actions {
   .row {
     display: flex;
     flex-wrap: wrap;
-    box-sizing: border-box; }
+    box-sizing: border-box; 
+  }
     .row > * {
       box-sizing: border-box; }
     .row.gtr-uniform > * > :last-child {
@@ -1431,7 +1433,9 @@ ul.actions {
   .row > .off-11-medium {
     margin-left: 91.6666666667%; }
   .row > .col-12-medium {
-    width: 100%; }
+    width: 100%; 
+    vertical-align: middle;
+    }
   .row > .off-12-medium {
     margin-left: 100%; }
   .row.gtr-0 {
@@ -1780,18 +1784,18 @@ ul.icons {
 
 /* Wrapper */
 .wrapper {
-  padding: 8rem 0 6rem 0 ;
+  padding: 2rem 0 1rem 0 ;
   position: relative;
   z-index: 1; }
   @media screen and (max-width: 1280px) {
     .wrapper {
-      padding: 4rem 0 2rem 0 ; } }
+      padding: 1rem 0 2rem 0 ; } }
   @media screen and (max-width: 736px) {
     .wrapper {
-      padding: 3rem 0 1rem 0 ; } }
+      padding: 1rem 0 1rem 0 ; } }
   @media screen and (max-width: 480px) {
     .wrapper {
-      padding: 2rem 0 0.1rem 0 ; } }
+      padding: 1rem 0 0.1rem 0 ; } }
 
 /* Banner */
 #banner {
@@ -2034,7 +2038,8 @@ ul.icons {
     #banner {
       height: auto !important;
       min-height: 0;
-      padding: 4rem 2rem 4rem 2rem; }
+      /* padding: 4rem 2rem 4rem 2rem; } */
+      padding: 2rem 0rem 0rem 1rem; }
       #banner .inner {
         width: 100%; }
       #banner h1 {
@@ -2061,7 +2066,7 @@ ul.icons {
 
 /* CTA */
 #cta {
-  background-color: #ce1b28;
+  background-color:  #3366cc;/*  #ce1b28; */
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
   background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../../images/cta01.jpg);
@@ -2978,13 +2983,20 @@ video {
   #logo-img{width: 100%; max-width: 1363px;}
 
 
-
-#headerPopup{
-  width:75%;
-  margin:0 auto;
-}
-
-#headerPopup iframe{
-  width:100%;
-  margin:0 auto;
-}
+  .vidcontainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .vidresponsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
