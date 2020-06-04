@@ -1772,3 +1772,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: none;
 }
 /*ends slick sponsored logos slidings*/
+#logo-img{width: 100%; max-width: 1363px;}
+.table-responsive {
+  min-height: 0.01%;
+  overflow-x: auto;
+}
+.embold{
+  text-emphasis: inherit;
+  color: #13a456;
+}
+.emfind{
+  color: #007bff;
+  font-style: italic;
+}
