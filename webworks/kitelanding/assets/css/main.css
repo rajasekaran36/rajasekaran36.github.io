@@ -2976,3 +2976,15 @@ video {
   width: 100%; }
 
   #logo-img{width: 100%; max-width: 1363px;}
+
+
+
+#headerPopup{
+  width:75%;
+  margin:0 auto;
+}
+
+#headerPopup iframe{
+  width:100%;
+  margin:0 auto;
+}
