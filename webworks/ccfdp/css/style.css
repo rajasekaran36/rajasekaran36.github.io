@@ -1776,6 +1776,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .table-responsive {
   min-height: 0.01%;
   overflow-x: auto;
+  word-wrap: break-word;
+  font-size: 2vw;
 }
 .embold{
   text-emphasis: inherit;
@@ -1784,4 +1786,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .emfind{
   color: #007bff;
   font-style: italic;
+}
+
+.resourceprofile{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
