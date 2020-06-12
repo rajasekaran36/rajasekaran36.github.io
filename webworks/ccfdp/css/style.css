@@ -1791,3 +1791,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 .resourceprofile{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+  padding-bottom: 75%;
+}
