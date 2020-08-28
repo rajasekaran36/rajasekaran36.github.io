@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mainplanediv {
+        position: relative;
+        width: 1000px;
+        height: 500px;
+        //border: 3px solid #73AD21;
+    }
+
+    #bulbdiv {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 300px;
+        //border: 3px solid #73AD21;
+    }
+
+    #switchdiv{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100px;
+        height: 100px;
+        //border: 3px solid #73AD21;
+    }
+</style>
+
+<body>
+    <div id="mainplanediv">
+        <div id="bulbdiv">
+            <img id="bulb" src="bulboff.png">
+        </div>
+        <div id="switchdiv">
+            <img id="switch1" src="pushoff.png" width="100" height="100" onmousedown="pushDown(this)" onmouseup="pushUp(this)" onclick="tweekBulb()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
