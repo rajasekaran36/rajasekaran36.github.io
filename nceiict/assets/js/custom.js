@@ -214,5 +214,9 @@
 
 
 
-  
-	
+function myFunction() {
+	setInterval(function(){document.getElementsByClassName("slick-next")[0].click();}, 2000);
+	setInterval(function(){document.getElementsByClassName("slick-next")[1].click();}, 2000);
+	setInterval(function(){document.getElementsByClassName("slick-next")[2].click();}, 2000);
+	setInterval(function(){document.getElementsByClassName("slick-next")[3].click();}, 2000);
+}
