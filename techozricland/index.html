@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>TECHOZRIC'21-KITE</title>
+	<link href="assets/css/neon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<!-- Favicon -->
     <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico"/>
@@ -17,12 +18,13 @@
     <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Theme color -->
     <link id="switcher" href="assets/css/theme-color/zcustom.css" rel="stylesheet">
+	
 
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
 
-	<!-- Timer-->
-    
+	
+
     <!-- Fonts -->
 
     <!-- Open Sans for body font -->
@@ -39,7 +41,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body onload="startTimer()">
+  <body onload="myFunction()">
   	
   	<!-- Start Header -->
 	<header id="mu-hero" class="" role="banner">
@@ -66,8 +68,8 @@
 			      		<li><a href="#mu-hero">Home</a></li>
 				        <li><a href="#mu-about">About Us</a></li>
 				        <!-- <li><a href="#mu-schedule">Schedule</a></li> -->
-			            <li><a href="#update">Events</a></li>
-			            <li><a href="#update">Venue</a></li>
+			            <li><a href="#mu-speakers">Events</a></li>
+			            <li><a href="#mu-venue">Venue</a></li>
 			            <!-- <li><a href="#mu-sponsors">Sponsors</a></li> -->
 			            <li><a href="#mu-contact">Contact</a></li>
 			      	</ul>
@@ -87,12 +89,12 @@
 						<div class="mu-logo-area">
 							<!-- text based logo -->
 							
-							<a class="mu-logo" href="#">
+							<a class="mu-logo" href="https://www.kgkite.ac.in/">
 								KGiSL INSTITUTE OF TECHNOLOGY
 							</a>
 							<h3 class="mu-event-date-line"> DEPARTMENT OF INFORMATION TECHNOLOGY</h3>
 							<div class="mu-hero-featured-content">
-								<h2>Proudly Presents</h2>
+								<h5 style="color: white;">Proudly Presents</h5>
 							</div>
 							
 							<!-- image based logo -->
@@ -103,16 +105,23 @@
 						<div class="mu-hero-featured-content">
 
 							<!-- <h1>HELLO! WELCOME TO NCEIICT'21</h1> -->
-							<h1><a class="mu-logo" href="#">
+							<!-- <h1><a class="mu-logo" href="#">
 								TECHOZRIC'21
-								</a></h1>
-							<h3 class="mu-event-date-line">Date of Symposium: 01<sup>st</sup> April, 2021</h3>
+								</a></h1> -->
+									   <div class="neons col-12">
+										  <h1 style="font-weight: 1000;font-size: 10vw; font-family: 'Bangers', cursive;";">TECHOZRIC'21</h1>
+									   </div>
+										 
+							<!-- <h3 class="mu-event-date-line">Date of Symposium: 01<sup>st</sup> April, 2021</h3> -->
+
+							<div class="dateneons col-12">
+								<!-- <h1 style="font-weight: 1000;font-size: 5vw;";">01<sup>st</sup> APR 2021</h1> -->
+								<h1 style="font-weight: 1000;font-size: 5vw;">Stay Tuned</h1>
+							 </div>
 
 							<div class="mu-event-counter-area">
 								<div id="mu-event-counter">
-									<h1>.........  For Event Details  ..........</h1>
-									<h3 style="color: burlywood;">stay tuned</h3>
-									<h1><a class="mu-logo" id="timer" style="color: blue;"></a></h1>
+									
 								</div>
 							</div>
 
@@ -126,61 +135,9 @@
 		</div>
 	</header>
 	<!-- End Header -->
-
-		<!-- Start Contact -->
-		<section id="mu-contact">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="mu-contact-area">
-
-							<div class="mu-title-area">
-								<h2 class="mu-heading-title">Contact Us</h2>
-								<h2>Ms. Sruthi Mol M</h2>
-								<h4>+91-9944451415</h4>
-								<h2>Shirley Josephine Mary R</h2>
-								<h4>+91-9597995659</h4>
-								<p>Department of Information Technology</p>	
-								<p>KGiSL Institute of Technology</p>	
-							</div>
-
-							<!-- Start Contact Content -->
-							<!-- <div class="mu-contact-content">
-								<div class="row">
-
-								<div class="col-md-12">
-									<div class="mu-contact-form-area">
-										<div id="form-messages"></div>
-											<form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
-												<div class="form-group">                
-													<input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
-												</div>
-												<div class="form-group">                
-													<input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
-												</div>              
-												<div class="form-group">
-													<textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
-												</div>
-												<button type="submit" class="mu-send-msg-btn"><span>SUBMIT</span></button>
-								            </form>
-										</div>
-									</div>
-								</div>
-							</div> -->
-							<!-- End Contact Content -->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Contact -->
 	
-	</main>
-	
-	<!-- End main content -->	
+
 			
-			
-	<!-- Start footer -->
 	<!-- Start footer -->
 	<footer id="mu-footer" role="contentinfo">
 		<div class="container">
@@ -200,9 +157,11 @@
 			</div>
 		</div>
 
-</footer>
-<!-- End footer -->
+	</footer>
+	<!-- End footer -->
 
+	
+	
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -214,7 +173,6 @@
     <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="assets/js/app.js"></script>
-	<script type="text/javascript" src="assets/js/cdtimer.js"></script>
   
        
 	
@@ -230,25 +188,238 @@
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
-	gtag('config', 'G-QD3HTJWJL1');
+	gtag('config', 'G-YBHVEXZGM9');
 	</script>
 	
+    
   </body>
-
 </html>
 
 
-<!-- Will Update Shortly -->
-<div class="modal fade" id="update" role="dialog">
+
+  <!-- Paper -->
+  <div class="modal fade" id="paper" role="dialog">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Stay Tuned....... </h4>
+          <h4 class="modal-title">Paper Presentation</h4>
         </div>
         <div class="modal-body">
 		<p>
-			<h1>We Will Update Shortly</h1>
+			<ol>
+				<li>Maximum 2 participants in a team.</li>
+				<li>Topic can be from any recent IT field.</li>
+				<li>Paper should be drafted in IEEE format.</li>
+				<li>Paper should send to @ in pdf format.</li> 
+				<li>The presentation time is for 8 minutes and queries for 2 minutes.</li>
+			</ol>
+		</p>
+        </div>
+        <div class="modal-footer">
+			<a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Project -->
+  <div class="modal fade" id="project" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Project & Workshop</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<strong>Project</strong>:
+			<ol>
+				<li>Maximum 3 participants in a team.</li>
+				<li>Project should be showcased on 01st march 2021 from 9.00 am to 1.00 pm.</li> 
+				<li>Software requirements will be arranged as per need. </li>
+				<li>Requirements should be submitted during registration 01st march 2021.</li>
+				<li>Project demo and presentation to be delivered to judges for 10 minutes.</li>
+			</ol>
+		</p>
+		<p>
+			<strong>Workshop</strong>:
+			<ol>
+				<li>Code for life</li>
+				<li>Ethical Hacking</li>
+			</ol>
+		</p>
+        </div>
+        <div class="modal-footer">
+			<a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Debugging -->
+  <div class="modal fade" id="debug" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Code Debugging</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<ol>
+				<li>Individual participation</li> 
+				<li>Programming Language ‘C’, Python</li>
+				<li>Time duration 1 hour.</li>
+			</ol>
+		</p>
+        </div>
+        <div class="modal-footer">
+			<a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Website -->
+  <div class="modal fade" id="website" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Website Design</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<ol>
+				<li>Individual participation</li>
+				<li>Time duration 1 hour.</li> 
+				<li>Spot event.</li>
+				<li>Internet facility will be provided.</li>
+			</ol>
+		</p>
+        </div>
+        <div class="modal-footer">
+			<a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Poster -->
+  <div class="modal fade" id="poster" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Poster Design</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<ol>
+				<li>Individual participation.</li>
+				<li>Design Tool ‘Photoshop’.</li>
+				<li>Time duration 1 hour.</li> 
+				<li>Spot event.</li>
+				<li>Internet facility will be provided.</li>
+			</ol>
+		</p>
+        </div>
+        <div class="modal-footer">
+			<a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Cultural -->
+  <div class="modal fade" id="cultural" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Cultural Events</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<ol>
+				<li>Two Participation is allowed.</li>
+				<li>Max. Of 3 entries per college is allowed.</li>
+				<li>Duration of the song shall be 2-4 minutes.</li>
+				<li>Use of obscene words in tracks is strictly prohibited.</li>
+				<li>Judgment will be based on clarity of words, voice quality, choice of song & connection.</li>
+			</ol>
+		</p>
+        </div>
+        <div class="modal-footer">
+			<a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Tresure Hunt -->
+  <div class="modal fade" id="treasure" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Tresure Hunt</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<strong>Detail: </strong> Treasure hunt is an interesting game, where first hints will be given to all participating teams and teams have to search for remaining hints and explore the treasure.
+		</p>
+		<p>
+			<ol>
+				<li>Event coordinator revealed the rules and regulations of the game and 1st clue was given to all the teams</li>
+				<li> All teams proceeded for finding further hints and Treasure.</li>
+				<li>Winning team: As no team could find the treasure, there is no winning team.</li>
+			</ol>
+		</p>
+		<p>
+			<strong>Reg Fee: ₹ 50</strong>
+		</p>
+        </div>
+        <div class="modal-footer">
+		  <a href="http://bit.ly/symposium_Registrationform" target="_blank"><button type="button" class="btn btn-default">Register</button></a>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Game -->
+  <div class="modal fade" id="game" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Gaming Event</h4>
+        </div>
+        <div class="modal-body">
+		<p>
+			<ol>
+				<li>Participants will be guided for the interesting gaming on spot </li>
+			</ol>
 		</p>
         </div>
         <div class="modal-footer">
