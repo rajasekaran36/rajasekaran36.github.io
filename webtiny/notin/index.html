@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not In</title>
+</head>
+<body>
+    <h2>NOT IN</h2>
+    <table>
+        <tr>
+            <td>
+                <label>Expected</label>
+            </td>
+            <td>
+                <label>Actual</label>
+            </td>
+            <td>
+                <label>Missing</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="expected" cols="50" rows="30"></textarea>
+            </td>
+            <td>
+                <textarea id="actual" cols="50" rows="30"></textarea>
+            </td>
+            <td>
+                <textarea id="missing" cols="50" rows="30"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="process" onclick="process()">Process</button>
+            </td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
