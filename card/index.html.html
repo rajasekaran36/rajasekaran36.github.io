@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volume Button Color Changer</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        }
+
+        #button-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            color: white;
+        }
+
+        #redButton {
+            background-color: red;
+        }
+
+        #blueButton {
+            background-color: blue;
+        }
+
+        #greenButton {
+            background-color: green;
+        }
+
+        #yellowButton {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="button-container">
+        <button id="redButton">Red</button>
+        <button id="blueButton">Blue</button>
+        <button id="greenButton">Green</button>
+        <button id="yellowButton">Yellow</button>
+    </div>
+
+    <script>
+        const colors = ["red", "blue", "green", "yellow"];
+        let currentColorIndex = 0;
+
+        // Function to change background color
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        // Adding event listeners to buttons for click events
+        document.getElementById('redButton').addEventListener('click', () => changeBackgroundColor('red'));
+        document.getElementById('blueButton').addEventListener('click', () => changeBackgroundColor('blue'));
+        document.getElementById('greenButton').addEventListener('click', () => changeBackgroundColor('green'));
+        document.getElementById('yellowButton').addEventListener('click', () => changeBackgroundColor('yellow'));
+
+        // Listening for keypresses (up/down arrows to simulate volume buttons)
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowUp') {
+                // Increment color index and change background
+                currentColorIndex = (currentColorIndex + 1) % colors.length;
+                changeBackgroundColor(colors[currentColorIndex]);
+            } else if (event.key === 'ArrowDown') {
+                // Decrement color index and change background
+                currentColorIndex = (currentColorIndex - 1 + colors.length) % colors.length;
+                changeBackgroundColor(colors[currentColorIndex]);
+            }
+        });
+    </script>
+
+</body>
+</html>
